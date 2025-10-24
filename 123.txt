@@ -73,3 +73,7 @@ git push origin master
 
 
 👉 Всё, изменения залиты!
+
+to compile
+
+g++ 2.cpp -o 2  
