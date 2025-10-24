@@ -1,4 +1,4 @@
-// switch max & min
+// reverse array
 
 #include <iostream>
 #include <cstdlib>
@@ -14,6 +14,7 @@ int main() {
     cin >> N;
 
     int *arr = new int[N];
+    int *rev = new int[N];
 
     cout << "Исходный массив: ";
     for (int i = 0; i < N; i++) {
@@ -22,20 +23,15 @@ int main() {
     }
     cout << endl;
 
-    int minIndex = 0, maxIndex = 0;
-    for (int i = 1; i < N; i++) {
-        if (arr[i] < arr[minIndex]) minIndex = i;
-        if (arr[i] > arr[maxIndex]) maxIndex = i;
-    }
+    for (int i = 0; i < N; i++)
+        rev[i] = arr[N - 1 - i];
 
-    int temp = arr[minIndex];
-    arr[minIndex] = arr[maxIndex];
-    arr[maxIndex] = temp;
-
-    cout << "После обмена: ";
-    for (int i = 0; i < N; i++) cout << arr[i] << " ";
+    cout << "Перевернутый массив: ";
+    for (int i = 0; i < N; i++)
+        cout << rev[i] << " ";
     cout << endl;
 
     delete[] arr;
+    delete[] rev;
     return 0;
 }

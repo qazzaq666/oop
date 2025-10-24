@@ -1,4 +1,4 @@
-// switch max & min
+// 0 if < x, else unchanged
 
 #include <iostream>
 #include <cstdlib>
@@ -22,18 +22,16 @@ int main() {
     }
     cout << endl;
 
-    int minIndex = 0, maxIndex = 0;
-    for (int i = 1; i < N; i++) {
-        if (arr[i] < arr[minIndex]) minIndex = i;
-        if (arr[i] > arr[maxIndex]) maxIndex = i;
-    }
+    int x;
+    cout << "Введите число: ";
+    cin >> x;
 
-    int temp = arr[minIndex];
-    arr[minIndex] = arr[maxIndex];
-    arr[maxIndex] = temp;
+    for (int i = 0; i < N; i++)
+        if (arr[i] < x) arr[i] = 0;
 
-    cout << "После обмена: ";
-    for (int i = 0; i < N; i++) cout << arr[i] << " ";
+    cout << "Результат: ";
+    for (int i = 0; i < N; i++)
+        cout << arr[i] << " ";
     cout << endl;
 
     delete[] arr;

@@ -1,4 +1,4 @@
-// switch max & min
+// local max
 
 #include <iostream>
 #include <cstdlib>
@@ -15,26 +15,25 @@ int main() {
 
     int *arr = new int[N];
 
-    cout << "Исходный массив: ";
+    cout << "Массив: ";
     for (int i = 0; i < N; i++) {
         arr[i] = rand() % 100;
         cout << arr[i] << " ";
     }
     cout << endl;
 
-    int minIndex = 0, maxIndex = 0;
-    for (int i = 1; i < N; i++) {
-        if (arr[i] < arr[minIndex]) minIndex = i;
-        if (arr[i] > arr[maxIndex]) maxIndex = i;
+    int index = -1;
+    for (int i = 1; i < N - 1; i++) {
+        if (arr[i] > arr[i - 1] && arr[i] > arr[i + 1]) {
+            index = i;
+            break;
+        }
     }
 
-    int temp = arr[minIndex];
-    arr[minIndex] = arr[maxIndex];
-    arr[maxIndex] = temp;
-
-    cout << "После обмена: ";
-    for (int i = 0; i < N; i++) cout << arr[i] << " ";
-    cout << endl;
+    if (index != -1)
+        cout << "Первый локальный максимум: " << arr[index] << ", индекс: " << index << endl;
+    else
+        cout << "Локальных максимумов нет" << endl;
 
     delete[] arr;
     return 0;
