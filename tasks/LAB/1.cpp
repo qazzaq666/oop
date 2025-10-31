@@ -62,12 +62,18 @@ double BetweenMaxMin(double arr[]) {
 
 void FillArr(double(&arr)[N]) {
     for (int i = 0; i < N; ++i) {
-        double num = (rand() % 100) / 10.0;    // от 0 до 9.99
-        int sign = (rand() % 2 == 0) ? 1 : -1;   // случайный знак
+        double num = (rand() % 100) / 10.0;    
+        int sign = (rand() % 2 == 0) ? 1 : -1;   
         arr[i] = num * sign;
     }
 }
 
+void PrintArr(double arr[]){
+    
+    for (int i = 0; i < N; ++i)
+        cout << arr[i] << " ";
+    cout << endl;
+}
 
 int main() {
     srand(time(0));
@@ -86,11 +92,7 @@ int main() {
     cout << "Произведение между минимальным и максимальным по модулю: " << prod << endl;
 
     sortDescending(mass);
-
     cout << "Массив после сортировки по убыванию:\n";
-    for (int i = 0; i < N; ++i)
-        cout << mass[i] << " ";
-    cout << endl;
-
+    PrintArr(mass);
     return 0;
 }
