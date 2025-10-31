@@ -35,7 +35,7 @@ int indexMinAbs(double arr[]) {
     return idx;
 }
 
-double BetweenMaxMin(double arr[]) {
+double ProdBetweenMaxMin(double arr[]) {
     int minIdx = indexMinAbs(arr);
     int maxIdx = indexMaxAbs(arr);
 
@@ -80,13 +80,15 @@ int main() {
     double mass[N];
     FillArr(mass);    
     
-    cout << "Исходный массив:\n";
-    for (int i = 0; i < N; ++i)
-    cout << mass[i] << " ";
-    cout << endl;
+    PrintArr(mass);
+
+    // cout << "Исходный массив:\n";
+    // for (int i = 0; i < N; ++i)
+    // cout << mass[i] << " ";
+    // cout << endl;
 
     double sum = sumPositive(mass);
-    double prod = BetweenMaxMin(mass);
+    double prod = ProdBetweenMaxMin(mass);
 
     cout << "\nСумма положительных элементов: " << sum << endl;
     cout << "Произведение между минимальным и максимальным по модулю: " << prod << endl;
