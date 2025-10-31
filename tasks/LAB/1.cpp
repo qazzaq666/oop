@@ -2,9 +2,8 @@
 #include <cmath>
 using namespace std;
 
-const int N = 10; // <-- тут задаёшь размер массива
+const int N = 5; 
 
-// --- 1. Сумма положительных элементов ---
 double sumPositive(double arr[]) {
     double sum = 0;
     for (int i = 0; i < N; ++i)
@@ -13,7 +12,6 @@ double sumPositive(double arr[]) {
     return sum;
 }
 
-// --- 2. Сортировка по убыванию (пузырёк) ---
 void sortDescending(double arr[]) {
     for (int i = 0; i < N - 1; ++i)
         for (int j = 0; j < N - i - 1; ++j)
@@ -21,7 +19,6 @@ void sortDescending(double arr[]) {
                 swap(arr[j], arr[j + 1]);
 }
 
-// --- 3. Индекс максимального по модулю ---
 int indexMaxAbs(double arr[]) {
     int idx = 0;
     for (int i = 1; i < N; ++i)
@@ -30,7 +27,6 @@ int indexMaxAbs(double arr[]) {
     return idx;
 }
 
-// --- 4. Индекс минимального по модулю ---
 int indexMinAbs(double arr[]) {
     int idx = 0;
     for (int i = 1; i < N; ++i)
@@ -39,8 +35,7 @@ int indexMinAbs(double arr[]) {
     return idx;
 }
 
-// --- 5. Произведение элементов между минимальным и максимальным по модулю ---
-double productBetweenMinMax(double arr[]) {
+double BetweenMaxMin(double arr[]) {
     int minIdx = indexMinAbs(arr);
     int maxIdx = indexMaxAbs(arr);
 
@@ -57,26 +52,44 @@ double productBetweenMinMax(double arr[]) {
     return prod;
 }
 
-int main() {
-    double arr[N] = { 1.5, -3.2, 0.7, 4.1, -2.5, 0.0, 6.9, -1.2, 3.3, -0.8 }; 
-    // можешь заменить значения как хочешь
 
+// void FillArr(double(&arr)[N]){
+//     for (int i=0; i< N; ++i){
+//         arr[i]= rand()%10;        
+//     }
+// }
+
+
+void FillArr(double(&arr)[N]) {
+    for (int i = 0; i < N; ++i) {
+        double num = (rand() % 100) / 10.0;    // от 0 до 9.99
+        int sign = (rand() % 2 == 0) ? 1 : -1;   // случайный знак
+        arr[i] = num * sign;
+    }
+}
+
+
+int main() {
+    srand(time(0));
+    double mass[N];
+    FillArr(mass);    
+    
     cout << "Исходный массив:\n";
     for (int i = 0; i < N; ++i)
-        cout << arr[i] << " ";
+    cout << mass[i] << " ";
     cout << endl;
 
-    double sum = sumPositive(arr);
-    double prod = productBetweenMinMax(arr);
+    double sum = sumPositive(mass);
+    double prod = BetweenMaxMin(mass);
 
     cout << "\nСумма положительных элементов: " << sum << endl;
     cout << "Произведение между минимальным и максимальным по модулю: " << prod << endl;
 
-    sortDescending(arr);
+    sortDescending(mass);
 
     cout << "Массив после сортировки по убыванию:\n";
     for (int i = 0; i < N; ++i)
-        cout << arr[i] << " ";
+        cout << mass[i] << " ";
     cout << endl;
 
     return 0;
