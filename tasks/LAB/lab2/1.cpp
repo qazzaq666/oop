@@ -33,19 +33,22 @@ int count_words(const char* src) {
     }
     return c;
 }
-
 int main() {
-    int arr[5] = {1,2,3,4,5};
-    cout << arr << endl;
+    int arr[5] = {1488,78,3,4,5};
+    cout << "---адреса---" << endl << arr << endl;
     cout << &arr[0] << endl;
-    cout << *arr << endl;
+    cout << "---разыменов и 1й---" << endl << *arr << endl;
     cout << arr[0] << endl;
 
     int* p = arr;
     for (int i = 0; i < 5; i++) {
         *(p + i) += 10;
     }
-
+    cout << "===+10==="<<endl;
+    for (int i = 0; i<5;i++){
+        cout << arr[i] << " ";
+    }
+    cout << endl << "-dynamic-" << endl;
     int* dyn = nullptr;
     allocArr(dyn, 5);
     for (int i = 0; i < 5; i++) dyn[i] = i + 1;
@@ -56,14 +59,14 @@ int main() {
         cout << *(q + i) << " ";
         i++;
     }
-    cout << endl;
+    cout << endl << "-reversed-" << endl;
 
     reverseArr(dyn, 5);
     for (int k = 0; k < 5; k++) cout << dyn[k] << " ";
     cout << endl;
 
-    const char* s = "Я ебал в рот ходить на пары";
-    cout << count_words(s) << endl;
+    const char* s = "Я вашу маму знаю";
+    cout<< "===words===" <<endl << count_words(s) << endl;
     cout << s << endl;
 
     delete[] dyn;
