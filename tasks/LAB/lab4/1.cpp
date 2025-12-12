@@ -1,4 +1,4 @@
-Еvg, [12.12.2025 16:58]
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -127,7 +127,7 @@ string input_line_nonempty(const string &prompt) {
     }
 }
 
-Еvg, [12.12.2025 16:58]
+
 double input_double(const string &prompt) {
     string s;
     while (true) {
@@ -231,7 +231,6 @@ int main() {
                         long long p = stoll(s);
                         if (p < 0 || (size_t)p > db.rows.size()) { cout << "Вне диапазона, повтори.\n"; continue; }
 
-Еvg, [12.12.2025 16:58]
 pos = (size_t)p;
                         break;
                     } catch (...) { cout << "Неверно. Повтори.\n"; }
