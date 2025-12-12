@@ -5,7 +5,7 @@
 
 using namespace std;
 
-
+//TODO изменения в реальном времени, графич. интерфейс 
 
 int main() {
     // initDB();
