@@ -10,7 +10,9 @@ struct plane
     int nextTech;  // след. ТО
 };
 
+// char* DB_FILE = "planes.db";
 const char* DB_FILE = "planes.db";
+
 const int MAX_RECORDS = 100;  
 
 
