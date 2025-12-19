@@ -76,4 +76,7 @@ git push origin master
 
 to compile
 
-g++ 2.cpp -o 2  
+g++ 2.cpp -o 2
+or 
+g++ 2.cpp -o 2.exe   -for win
+
