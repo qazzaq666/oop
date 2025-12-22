@@ -12,7 +12,7 @@ int sumBetweenFirstTwoPositive(int(&arr)[ARR_SIZE]);
 void sortNullsLast(int(&arr)[ARR_SIZE]);
 
 int main() {
-    setlocale(LC_ALL, "Russian");
+
     srand(time(0));
     int mass[ARR_SIZE];
     

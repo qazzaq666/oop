@@ -35,6 +35,9 @@ int count_words(const char* src) {
 }
 int main() {
     int arr[5] = {1488,78,3,4,5};
+
+    
+
     cout << "---адреса---" << endl << arr << endl;
     cout << &arr[0] << endl;
     cout << "---разыменов и 1й---" << endl << *arr << endl;
@@ -65,9 +68,9 @@ int main() {
     for (int k = 0; k < 5; k++) cout << dyn[k] << " ";
     cout << endl;
 
-    const char* s = "Сколько слов тут я не понял";
-    cout<< "===words===" <<endl << count_words(s) << endl;
-    cout << s << endl;
+    const char* s = "Сколько слов тут нужно посчитать срочно";
+    
+    cout<< '"'<< s <<'"'<< endl<< "их ровно " << count_words(s) << endl;
 
     delete[] dyn;
     return 0;

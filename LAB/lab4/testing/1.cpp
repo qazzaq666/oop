@@ -16,7 +16,7 @@ int main() {
     
     
     
-    cout << getSize()<<endl;
+    cout << "Кол-во: " << getSize()<<endl;
     // printRecord(4);
     // eraseRecord(6);
     
