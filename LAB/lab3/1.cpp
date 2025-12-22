@@ -65,7 +65,7 @@ int main() {
     for (int k = 0; k < 5; k++) cout << dyn[k] << " ";
     cout << endl;
 
-    const char* s = "Я вашу маму знаю";
+    const char* s = "Сколько слов тут я не понял";
     cout<< "===words===" <<endl << count_words(s) << endl;
     cout << s << endl;
 
