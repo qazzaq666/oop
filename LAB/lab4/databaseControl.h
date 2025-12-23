@@ -80,6 +80,14 @@ void eraseRecord(int index) {
     writeRecord(size - 1, empty);
 }
 
+void printRecord(int x){
+    plane p = readRecord(x);
+    cout << x << ") "
+     << p.type << " | "
+     << p.hours << " | "
+     << p.nextTech << endl;
+    }
+
 // push_back()
 void push_back(const plane& p) {
     int size = getSize();
@@ -92,7 +100,9 @@ void pop_back() {
     int size = getSize();
     if (size == 0) return;
     plane empty = {'\0', 0, 0};
+    printRecord(size-1);
     writeRecord(size - 1, empty);
+
 }
 
 // insert(index, element)
@@ -108,14 +118,6 @@ void insertRecord(int index, const plane& p) {
 
     writeRecord(index, p);
 }
-
-void printRecord(int x){
-    plane p = readRecord(x);
-    cout << x << ") "
-     << p.type << " | "
-     << p.hours << " | "
-     << p.nextTech << endl;
-    }
 
 
 
