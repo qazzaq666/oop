@@ -34,9 +34,9 @@ int main() {
 
     
 
-    cout << "---адреса---" << endl << arr << endl;
+    cout << "---название и адрес---" << endl << arr << endl;
     cout << &arr[0] << endl;
-    cout << "---разыменов и 1й---" << endl << *arr << endl;
+    cout << "---разыменование и 1й элемент---" << endl << *arr << endl;
     cout << arr[0] << endl;
 
     int* p = arr;
