@@ -1,2 +1,5 @@
-before start on WIN
-chcp 65001
+before start on WIN type
+
+```chcp 65001```
+
+to console
