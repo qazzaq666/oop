@@ -58,17 +58,16 @@ int main()
         case 3:
         {
             int index;
-            cout << "Index: ";
-            if (!(cin >> index)) { //проверка на int
-                cout << "Ошибка: нужно ввести число!" << endl;
-                cin.clear(); 
-                break; 
-            }
-    }
+            cout << "Index1: ";
+            cin >> index ;
+            plane p = inputPlane();
+            insertRecord(index, p);
+            break;
+        }
         case 4:
         {
             int index;
-            cout << "Index: ";
+            cout << "Index2: ";
             cin >> index;
             eraseRecord(index);
             break;
@@ -100,3 +99,4 @@ int main()
 
     return 0;
 }
+

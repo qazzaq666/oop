@@ -110,7 +110,7 @@ void insertRecord(int index, const plane& p) {
     int size = getSize();
     if (size >= MAX_RECORDS) return;
 
-    // сдвигаем вправо
+    
     for (int i = size; i > index; i--) {
         plane prev = readRecord(i - 1);
         writeRecord(i, prev);
