@@ -25,14 +25,10 @@ int count_words(const char* src) {
         if (src[i] != ' ' && src[i] != '\t' && src[i] != '\n') {
             if (!in) {
                 c++;
-                in = true;
-            }
-        } else {
-            in = false;
-        }
-    }
-    return c;
-}
+                in = true;}} 
+        else {
+            in = false;}}
+    return c;}
 int main() {
     int arr[5] = {1488,78,3,4,5};
 
