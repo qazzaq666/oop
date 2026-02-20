@@ -1,0 +1,109 @@
+#include <iostream>
+using namespace std;
+#include <limits>
+#include "./include/matrix.hpp"
+
+using std::cin; using std::cout; using std::endl;
+
+static void pause() { cout << "Press Enter to continue..."; std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); }
+
+static void printMenu() {
+    cout << "\nMatrix demo menu:\n";
+    cout << "1) Input matrix A\n";
+    cout << "2) Input matrix B\n";
+    cout << "3) Show A, B\n";
+    cout << "4) A + B\n";
+    cout << "5) A - B\n";
+    cout << "6) A * B\n";
+    cout << "7) A / B (A * inv(B))\n";
+    cout << "8) A * scalar\n";
+    cout << "9) A / scalar\n";
+    cout << "10) transpose A\n";
+    cout << "11) inverse A\n";
+    cout << "12) determinant A\n";
+    cout << "13) norm A\n";
+    cout << "14) A^k (integer k)\n";
+    cout << "15) type checks A\n";
+    cout << "16) Compare A == B\n";
+    cout << "0) Exit\n";
+}
+
+static void readMatrixInteractive(Matrix& m) {
+    cout << "Enter rows and cols, then elements row-by-row (e.g. '2 2 1 2 3 4'):\n";
+    cin >> m;
+    // consume rest of line
+    std::string dummy; std::getline(cin,dummy);
+}
+
+int main() {
+    Matrix A, B;
+    int choice = -1;
+    while (choice!=0) {
+        printMenu();
+        cout << "Choice: ";
+        if (!(cin >> choice)) break;
+        std::string tmp; std::getline(cin,tmp);
+        try {
+            switch(choice) {
+                case 1: cout << "Input matrix A:\n"; readMatrixInteractive(A); break;
+                case 2: cout << "Input matrix B:\n"; readMatrixInteractive(B); break;
+                case 3: cout << "Matrix A:\n" << A << "\nMatrix B:\n" << B; break;
+                case 4: { auto C = A + B; cout << "A + B =\n" << C; } break;
+                case 5: { auto C = A - B; cout << "A - B =\n" << C; } break;
+                case 6: { auto C = A * B; cout << "A * B =\n" << C; } break;
+                case 7: { auto C = A / B; cout << "A / B = A * inv(B) =\n" << C; } break;
+                case 8: {
+                    double s; cout << "scalar: "; cin >> s;
+                    auto C = A * s; cout << "A * "<<s<<" =\n"<<C; }
+                    break;
+                case 9: {
+                    double s; cout << "scalar: "; cin >> s;
+                    auto C = A / s; cout << "A / "<<s<<" =\n"<<C; }
+                    break;
+                case 10: { auto C = A.transpose(); cout << "transpose(A) =\n" << C; } break;
+                case 11: { auto C = A.inverse(); cout << "inverse(A) =\n" << C; } break;
+                case 12: { double d = A.determinant(); cout << "det(A) = "<<d<<"\n"; } break;
+                case 13: { double nrm = A.norm(); cout << "norm(A) = "<<nrm<<"\n"; } break;
+                case 14: {
+                    int k; cout << "exponent k: "; cin >> k;
+                    auto C = A.pow(k); cout << "A^"<<k<<" =\n"<<C; }
+                    break;
+                case 15: {
+                    cout << "isSquare: "<<A.isSquare()<<"\n";
+                    cout << "isDiagonal: "<<A.isDiagonal()<<"\n";
+                    cout << "isZero: "<<A.isZero()<<"\n";
+                    cout << "isIdentity: "<<A.isIdentity()<<"\n";
+                    cout << "isSymmetric: "<<A.isSymmetric()<<"\n";
+                    cout << "isUpperTriangular: "<<A.isUpperTriangular()<<"\n";
+                    cout << "isLowerTriangular: "<<A.isLowerTriangular()<<"\n";
+                } break;
+                case 16: cout << "A == B ? " << (A==B) << "\n"; break;
+                case 0: cout << "Exiting...\n"; break;
+                default: cout << "Unknown option\n"; break;
+            }
+        } catch (const std::exception& ex) {
+            cout << "Error: "<<ex.what()<<"\n";
+        }
+        // clear error flags if any
+        if (!cin) { cin.clear(); std::string s; std::getline(cin,s); }
+    }
+    return 0;
+}
+
+
+
+
+// Описать класс, реализующий тип данных «вещественная матрица» и работу
+// с ними. Класс должен реализовывать следующие операции над матрицами:
+// • сложение, вычитание, умножение, деление (+, -, *, /) (умножение и деление,
+// как на другую матрицу, так и на число);
+// • комбинированные операции присваивания (+=, -=, *=, /=);
+// • операции сравнения на равенство/неравенство;
+// • операции вычисления обратной и транспонированной матрицы, операцию
+// возведения в степень;
+// • методы вычисления детерминанта и нормы;
+// • методы, реализующие проверку типа матрицы (квадратная, диагональная, ну­
+// левая, единичная, симметрическая, верхняя треугольная, нижняя треугольная);
+// • операции ввода/вывода в стандартные потоки.
+// Написать программу, демонстрирующую работу с этим классом. Программа
+// должна содержать меню, позволяющее осуществить проверку всех методов класса.
