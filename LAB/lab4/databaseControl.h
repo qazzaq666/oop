@@ -8,8 +8,6 @@ using namespace std;
 
 const char DB_FILE[] = "aircraft_db.txt";
 
-// ================= СТРУКТУРЫ =================
-
 struct Aircraft {
     char type[50];        // Тип самолета (марка)
     double flightHours;   // Налет в часах
@@ -20,8 +18,6 @@ struct Node {
     Aircraft data;
     Node* next;
 };
-
-// ================= ВСПОМОГАТЕЛЬНЫЕ =================
 
 int getSize(Node* head) {
     int count = 0;
