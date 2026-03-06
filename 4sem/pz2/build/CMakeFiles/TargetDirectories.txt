@@ -1,0 +1,3 @@
+/home/evg/github/oop/4sem/pz2/build/CMakeFiles/pz2.dir
+/home/evg/github/oop/4sem/pz2/build/CMakeFiles/edit_cache.dir
+/home/evg/github/oop/4sem/pz2/build/CMakeFiles/rebuild_cache.dir

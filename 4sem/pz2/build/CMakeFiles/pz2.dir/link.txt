@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/pz2.dir/main.cpp.o CMakeFiles/pz2.dir/src/triangle.cpp.o -o pz2 
