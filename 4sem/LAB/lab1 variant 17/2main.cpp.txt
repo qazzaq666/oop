@@ -1,67 +1,85 @@
 #include <iostream>
-#include <limits>
+using namespace std;
 #include "./include/matrix.hpp"
 
+void printMenu() {
+    cout << "\nMatrix menu:\n";
+    cout << "1) Input matrix A\n";
+    cout << "2) Input matrix B\n";
+    cout << "3) Show A, B\n";
+    cout << "4) A + B\n";
+    cout << "5) A - B\n";
+    cout << "6) A * B\n";
+    cout << "7) A / B (A * inv(B))\n";
+    cout << "8) A * num\n";
+    cout << "9) A / num\n";
+    // cout << "10) transpose A\n";
+    // cout << "11) inverse A\n";
+    // cout << "12) determinant A\n";
+    // cout << "13) norm A\n";
+    // cout << "14) A^k (integer k)\n";
+    // cout << "15) type checks A\n";
+    // cout << "16) Compare A == B\n";
+    cout << "0) Exit\n";
+}
 
-int main(){
 
-    int r,c;
+int main() {
+    printMenu();
 
-    std::cout<<"Rows cols: ";
-    std::cin>>r>>c;
+    Matrix A,B;
+    int choice = -1;
+    cout << "Input: ";
+    cin >> choice;
+    switch (choice)
+    {
+    case 0:
+        
+        break;
+    
+    case 1:
+        cout << "inp A";
+        break;
+    case 2:
+        cout << "inp B";
+        break;
+    case 3:
+        cout << "SHOW";
+        break;
+    case 4:
+        cout << "A+B";
+        break;
 
-    Matrix A(r,c);
+    case 5:
+        cout << "A-B";
+        break;
 
-    std::cout<<"Matrix A:\n";
-    A.input();
+    case 6:
+        cout << "A*B";
+        break;
 
-    int choice;
-
-    do{
-
-        std::cout<<"\n1 Print\n";
-        std::cout<<"2 Transpose\n";
-        std::cout<<"3 Determinant\n";
-        std::cout<<"4 Norm\n";
-        std::cout<<"5 Power\n";
-        std::cout<<"6 Check types\n";
-        std::cout<<"0 Exit\n";
-
-        std::cin>>choice;
-
-        if(choice==1)
-            A.print();
-
-        if(choice==2){
-            Matrix B = A.transpose();
-            B.print();
-        }
-
-        if(choice==3)
-            std::cout<<A.determinant()<<std::endl;
-
-        if(choice==4)
-            std::cout<<A.norm()<<std::endl;
-
-        if(choice==5){
-            int n;
-            std::cin>>n;
-            Matrix B = A.power(n);
-            B.print();
-        }
-
-        if(choice==6){
-            std::cout<<"Square: "<<A.isSquare()<<std::endl;
-            std::cout<<"Zero: "<<A.isZero()<<std::endl;
-            std::cout<<"Identity: "<<A.isIdentity()<<std::endl;
-            std::cout<<"Diagonal: "<<A.isDiagonal()<<std::endl;
-            std::cout<<"Symmetric: "<<A.isSymmetric()<<std::endl;
-            std::cout<<"Upper triangular: "<<A.isUpperTriangular()<<std::endl;
-            std::cout<<"Lower triangular: "<<A.isLowerTriangular()<<std::endl;
-        }
-
-    }while(choice!=0);
-
+    case 7:
+        cout << "A/B";
+        
+        break;
+    case 8:
+        cout << "A*num";
+        
+    case 9:
+        cout << "A/num";
+        
+    
+    
+    
+    
+    }
+    cout<<endl;
+    
+    
+    
+    // cout<<"wrong number";
+    // cout << "2!" << endl;
+    return 0;
 }
 
 
@@ -70,6 +88,8 @@ int main(){
 // с ними. Класс должен реализовывать следующие операции над матрицами:
 // • сложение, вычитание, умножение, деление (+, -, *, /) (умножение и деление,
 // как на другую матрицу, так и на число);
+
+
 // • комбинированные операции присваивания (+=, -=, *=, /=);
 // • операции сравнения на равенство/неравенство;
 // • операции вычисления обратной и транспонированной матрицы, операцию
