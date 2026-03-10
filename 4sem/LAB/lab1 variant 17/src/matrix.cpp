@@ -1,11 +1,11 @@
 #include "matrix.hpp"
 #include <cmath>
-
+using namespace std;
 Matrix::Matrix(int r, int c) : rows(r), cols(c) {
-    data.resize(r, std::vector<double>(c, 0));
+    data.resize(r, vector<double>(c, 0));
 }
 
-Matrix::Matrix(const std::vector<std::vector<double>>& d) {
+Matrix::Matrix(const vector<vector<double>>& d) {
     data = d;
     rows = d.size();
     cols = d[0].size();
@@ -14,14 +14,14 @@ Matrix::Matrix(const std::vector<std::vector<double>>& d) {
 void Matrix::input() {
     for(int i=0;i<rows;i++)
         for(int j=0;j<cols;j++)
-            std::cin >> data[i][j];
+            cin >> data[i][j];
 }
 
 void Matrix::print() const {
     for(int i=0;i<rows;i++){
         for(int j=0;j<cols;j++)
-            std::cout << data[i][j] << " ";
-        std::cout << std::endl;
+            cout << data[i][j] << " ";
+        cout << endl;
     }
 }
 

@@ -1,3 +1,0 @@
-C:/Users/Admin/Desktop/oop/4sem/LAB/build/CMakeFiles/lab1.dir
-C:/Users/Admin/Desktop/oop/4sem/LAB/build/CMakeFiles/edit_cache.dir
-C:/Users/Admin/Desktop/oop/4sem/LAB/build/CMakeFiles/rebuild_cache.dir

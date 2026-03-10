@@ -3,16 +3,16 @@
 
 #include <vector>
 #include <iostream>
-
+using namespace std;
 class Matrix {
 private:
     int rows;
     int cols;
-    std::vector<std::vector<double>> data;
+    vector<vector<double>> data;
 
 public:
     Matrix(int r, int c);
-    Matrix(const std::vector<std::vector<double>>& d);
+    Matrix(const vector<vector<double>>& d);
 
     void input();
     void print() const;

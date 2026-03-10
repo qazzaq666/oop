@@ -1,33 +1,33 @@
 #include <iostream>
 #include <limits>
 #include "./include/matrix.hpp"
-
+using namespace std;
 
 int main(){
 
     int r,c;
 
-    std::cout<<"Rows cols: ";
-    std::cin>>r>>c;
+    cout<<"Rows cols: ";
+    cin>>r>>c;
 
     Matrix A(r,c);
 
-    std::cout<<"Matrix A:\n";
+    cout<<"Matrix A:\n";
     A.input();
 
     int choice;
 
     do{
 
-        std::cout<<"\n1 Print\n";
-        std::cout<<"2 Transpose\n";
-        std::cout<<"3 Determinant\n";
-        std::cout<<"4 Norm\n";
-        std::cout<<"5 Power\n";
-        std::cout<<"6 Check types\n";
-        std::cout<<"0 Exit\n";
+        cout<<"\n1 Print\n";
+        cout<<"2 Transpose\n";
+        cout<<"3 Determinant\n";
+        cout<<"4 Norm\n";
+        cout<<"5 Power\n";
+        cout<<"6 Check types\n";
+        cout<<"0 Exit\n";
 
-        std::cin>>choice;
+        cin>>choice;
 
         if(choice==1)
             A.print();
@@ -38,26 +38,26 @@ int main(){
         }
 
         if(choice==3)
-            std::cout<<A.determinant()<<std::endl;
+            cout<<A.determinant()<<endl;
 
         if(choice==4)
-            std::cout<<A.norm()<<std::endl;
+            cout<<A.norm()<<endl;
 
         if(choice==5){
             int n;
-            std::cin>>n;
+            cin>>n;
             Matrix B = A.power(n);
             B.print();
         }
 
         if(choice==6){
-            std::cout<<"Square: "<<A.isSquare()<<std::endl;
-            std::cout<<"Zero: "<<A.isZero()<<std::endl;
-            std::cout<<"Identity: "<<A.isIdentity()<<std::endl;
-            std::cout<<"Diagonal: "<<A.isDiagonal()<<std::endl;
-            std::cout<<"Symmetric: "<<A.isSymmetric()<<std::endl;
-            std::cout<<"Upper triangular: "<<A.isUpperTriangular()<<std::endl;
-            std::cout<<"Lower triangular: "<<A.isLowerTriangular()<<std::endl;
+            cout<<"Square: "<<A.isSquare()<<endl;
+            cout<<"Zero: "<<A.isZero()<<endl;
+            cout<<"Identity: "<<A.isIdentity()<<endl;
+            cout<<"Diagonal: "<<A.isDiagonal()<<endl;
+            cout<<"Symmetric: "<<A.isSymmetric()<<endl;
+            cout<<"Upper triangular: "<<A.isUpperTriangular()<<endl;
+            cout<<"Lower triangular: "<<A.isLowerTriangular()<<endl;
         }
 
     }while(choice!=0);
