@@ -1463,3 +1463,1019 @@ events:
         - "C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Spicetify.Spicetify_Microsoft.Winget.Source_8wekyb3d8bbwe"
         - "C:\\Users\\Admin\\AppData\\Local\\spicetify"
 ...
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:468 (find_file)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:506 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCCompilerId.c.in"
+    candidate_directories:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/"
+    found: "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCCompilerId.c.in"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\PowerShell\\7\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\PuTTY\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WinGet\\Links"
+        - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\ffmpeg"
+        - "C:\\Users\\Admin\\AppData\\Local\\PowerToys\\DSCModules\\"
+        - "C:\\Users\\Admin\\Desktop\\platform-tools"
+        - "C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Spicetify.Spicetify_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\Admin\\AppData\\Local\\spicetify"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/lab1"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      ╨Т╨╡╤А╤Б╨╕╤П MSBuild 18.0.5+e22287bf1 ╨┤╨╗╤П .NET Framework
+      ╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 10.03.2026 3:47:57.
+      
+      ╨Я╤А╨╛╨╡╨║╤В "C:\\Users\\Admin\\Desktop\\oop\\4sem\\LAB\\lab1 variant 17\\build\\CMakeFiles\\4.3.0-rc2\\CompilerIdC\\CompilerIdC.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+      PrepareForBuild:
+        ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "Debug\\".
+        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "Debug\\CompilerIdC.tlog\\".
+      InitializeBuildStatus:
+        ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "Debug\\CompilerIdC.tlog\\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
+        ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+      ClCompile:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc145.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+      LINK : fatal error LNK1104: ╨╜╨╡ ╤Г╨┤╨░╨╡╤В╤Б╤П ╨╛╤В╨║╤А╤Л╤В╤М ╤Д╨░╨╣╨╗ "ucrtd.lib" [C:\\Users\\Admin\\Desktop\\oop\\4sem\\LAB\\lab1 variant 17\\build\\CMakeFiles\\4.3.0-rc2\\CompilerIdC\\CompilerIdC.vcxproj]
+      ╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "C:\\Users\\Admin\\Desktop\\oop\\4sem\\LAB\\lab1 variant 17\\build\\CMakeFiles\\4.3.0-rc2\\CompilerIdC\\CompilerIdC.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О) ╤Б ╨╛╤И╨╕╨▒╨║╨╛╨╣.
+      
+      ╨Ю╤И╨╕╨▒╨║╨░ ╤Б╨▒╨╛╤А╨║╨╕.
+      
+      "C:\\Users\\Admin\\Desktop\\oop\\4sem\\LAB\\lab1 variant 17\\build\\CMakeFiles\\4.3.0-rc2\\CompilerIdC\\CompilerIdC.vcxproj" (╤Ж╨╡╨╗╨╡╨▓╨╛╨╣ ╨╛╨▒╤К╨╡╨║╤В ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О) (1) ->
+      (╨ж╨╡╨╗╨╡╨▓╨╛╨╣ ╨╛╨▒╤К╨╡╨║╤В Link) -> 
+        LINK : fatal error LNK1104: ╨╜╨╡ ╤Г╨┤╨░╨╡╤В╤Б╤П ╨╛╤В╨║╤А╤Л╤В╤М ╤Д╨░╨╣╨╗ "ucrtd.lib" [C:\\Users\\Admin\\Desktop\\oop\\4sem\\LAB\\lab1 variant 17\\build\\CMakeFiles\\4.3.0-rc2\\CompilerIdC\\CompilerIdC.vcxproj]
+      
+          ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
+          ╨Ю╤И╨╕╨▒╨╛╨║: 1
+      
+      ╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:00.48
+      
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:468 (find_file)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:506 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCCompilerId.c.in"
+    candidate_directories:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/"
+    found: "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCCompilerId.c.in"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\PowerShell\\7\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\PuTTY\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WinGet\\Links"
+        - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\ffmpeg"
+        - "C:\\Users\\Admin\\AppData\\Local\\PowerToys\\DSCModules\\"
+        - "C:\\Users\\Admin\\Desktop\\platform-tools"
+        - "C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Spicetify.Spicetify_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\Admin\\AppData\\Local\\spicetify"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/lab1"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      ╨Т╨╡╤А╤Б╨╕╤П MSBuild 18.0.5+e22287bf1 ╨┤╨╗╤П .NET Framework
+      ╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 10.03.2026 3:47:58.
+      
+      ╨Я╤А╨╛╨╡╨║╤В "C:\\Users\\Admin\\Desktop\\oop\\4sem\\LAB\\lab1 variant 17\\build\\CMakeFiles\\4.3.0-rc2\\CompilerIdC\\CompilerIdC.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+      PrepareForBuild:
+        ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "Debug\\".
+        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "Debug\\CompilerIdC.tlog\\".
+      InitializeBuildStatus:
+        ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "Debug\\CompilerIdC.tlog\\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
+        ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+      ClCompile:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc145.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+      LINK : fatal error LNK1104: ╨╜╨╡ ╤Г╨┤╨░╨╡╤В╤Б╤П ╨╛╤В╨║╤А╤Л╤В╤М ╤Д╨░╨╣╨╗ "ucrtd.lib" [C:\\Users\\Admin\\Desktop\\oop\\4sem\\LAB\\lab1 variant 17\\build\\CMakeFiles\\4.3.0-rc2\\CompilerIdC\\CompilerIdC.vcxproj]
+      ╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "C:\\Users\\Admin\\Desktop\\oop\\4sem\\LAB\\lab1 variant 17\\build\\CMakeFiles\\4.3.0-rc2\\CompilerIdC\\CompilerIdC.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О) ╤Б ╨╛╤И╨╕╨▒╨║╨╛╨╣.
+      
+      ╨Ю╤И╨╕╨▒╨║╨░ ╤Б╨▒╨╛╤А╨║╨╕.
+      
+      "C:\\Users\\Admin\\Desktop\\oop\\4sem\\LAB\\lab1 variant 17\\build\\CMakeFiles\\4.3.0-rc2\\CompilerIdC\\CompilerIdC.vcxproj" (╤Ж╨╡╨╗╨╡╨▓╨╛╨╣ ╨╛╨▒╤К╨╡╨║╤В ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О) (1) ->
+      (╨ж╨╡╨╗╨╡╨▓╨╛╨╣ ╨╛╨▒╤К╨╡╨║╤В Link) -> 
+        LINK : fatal error LNK1104: ╨╜╨╡ ╤Г╨┤╨░╨╡╤В╤Б╤П ╨╛╤В╨║╤А╤Л╤В╤М ╤Д╨░╨╣╨╗ "ucrtd.lib" [C:\\Users\\Admin\\Desktop\\oop\\4sem\\LAB\\lab1 variant 17\\build\\CMakeFiles\\4.3.0-rc2\\CompilerIdC\\CompilerIdC.vcxproj]
+      
+          ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
+          ╨Ю╤И╨╕╨▒╨╛╨║: 1
+      
+      ╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:00.47
+      
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:103 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "link"
+    candidate_directories:
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/PowerShell/7/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/PuTTY/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/Admin/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Users/Admin/AppData/Local/Programs/Python/Python313/"
+      - "C:/Users/Admin/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/Admin/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/Admin/AppData/Local/Microsoft/WinGet/Links/"
+      - "C:/Users/Admin/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/ffmpeg/"
+      - "C:/Users/Admin/AppData/Local/PowerToys/DSCModules/"
+      - "C:/Users/Admin/Desktop/platform-tools/"
+      - "C:/Users/Admin/AppData/Local/Microsoft/WinGet/Packages/Spicetify.Spicetify_Microsoft.Winget.Source_8wekyb3d8bbwe/"
+      - "C:/Users/Admin/AppData/Local/spicetify/"
+    searched_directories:
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/link.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/link.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/link"
+      - "C:/Windows/System32/link.com"
+      - "C:/Windows/System32/link.exe"
+      - "C:/Windows/System32/link"
+      - "C:/Windows/link.com"
+      - "C:/Windows/link.exe"
+      - "C:/Windows/link"
+      - "C:/Windows/System32/wbem/link.com"
+      - "C:/Windows/System32/wbem/link.exe"
+      - "C:/Windows/System32/wbem/link"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/link.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/link.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/link"
+      - "C:/Windows/System32/OpenSSH/link.com"
+      - "C:/Windows/System32/OpenSSH/link.exe"
+      - "C:/Windows/System32/OpenSSH/link"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/link.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/link.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/link"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/link.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/link.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/link"
+      - "C:/Program Files/dotnet/link.com"
+      - "C:/Program Files/dotnet/link.exe"
+      - "C:/Program Files/dotnet/link"
+      - "C:/Program Files/PowerShell/7/link.com"
+      - "C:/Program Files/PowerShell/7/link.exe"
+      - "C:/Program Files/PowerShell/7/link"
+      - "C:/Program Files/Git/cmd/link.com"
+      - "C:/Program Files/Git/cmd/link.exe"
+      - "C:/Program Files/Git/cmd/link"
+      - "C:/Program Files/PuTTY/link.com"
+      - "C:/Program Files/PuTTY/link.exe"
+      - "C:/Program Files/PuTTY/link"
+      - "C:/Program Files/CMake/bin/link.com"
+      - "C:/Program Files/CMake/bin/link.exe"
+      - "C:/Program Files/CMake/bin/link"
+      - "C:/Users/Admin/AppData/Local/Programs/Python/Python313/Scripts/link.com"
+      - "C:/Users/Admin/AppData/Local/Programs/Python/Python313/Scripts/link.exe"
+      - "C:/Users/Admin/AppData/Local/Programs/Python/Python313/Scripts/link"
+      - "C:/Users/Admin/AppData/Local/Programs/Python/Python313/link.com"
+      - "C:/Users/Admin/AppData/Local/Programs/Python/Python313/link.exe"
+      - "C:/Users/Admin/AppData/Local/Programs/Python/Python313/link"
+      - "C:/Users/Admin/AppData/Local/Programs/Python/Launcher/link.com"
+      - "C:/Users/Admin/AppData/Local/Programs/Python/Launcher/link.exe"
+      - "C:/Users/Admin/AppData/Local/Programs/Python/Launcher/link"
+      - "C:/Users/Admin/AppData/Local/Microsoft/WindowsApps/link.com"
+      - "C:/Users/Admin/AppData/Local/Microsoft/WindowsApps/link.exe"
+      - "C:/Users/Admin/AppData/Local/Microsoft/WindowsApps/link"
+      - "C:/Users/Admin/AppData/Local/Microsoft/WinGet/Links/link.com"
+      - "C:/Users/Admin/AppData/Local/Microsoft/WinGet/Links/link.exe"
+      - "C:/Users/Admin/AppData/Local/Microsoft/WinGet/Links/link"
+      - "C:/Users/Admin/AppData/Local/Programs/Microsoft VS Code/bin/link.com"
+      - "C:/Users/Admin/AppData/Local/Programs/Microsoft VS Code/bin/link.exe"
+      - "C:/Users/Admin/AppData/Local/Programs/Microsoft VS Code/bin/link"
+      - "C:/msys64/ucrt64/bin/link.com"
+      - "C:/msys64/ucrt64/bin/link.exe"
+      - "C:/msys64/ucrt64/bin/link"
+      - "C:/ffmpeg/link.com"
+      - "C:/ffmpeg/link.exe"
+      - "C:/ffmpeg/link"
+      - "C:/Users/Admin/AppData/Local/PowerToys/DSCModules/link.com"
+      - "C:/Users/Admin/AppData/Local/PowerToys/DSCModules/link.exe"
+      - "C:/Users/Admin/AppData/Local/PowerToys/DSCModules/link"
+      - "C:/Users/Admin/Desktop/platform-tools/link.com"
+      - "C:/Users/Admin/Desktop/platform-tools/link.exe"
+      - "C:/Users/Admin/Desktop/platform-tools/link"
+      - "C:/Users/Admin/AppData/Local/Microsoft/WinGet/Packages/Spicetify.Spicetify_Microsoft.Winget.Source_8wekyb3d8bbwe/link.com"
+      - "C:/Users/Admin/AppData/Local/Microsoft/WinGet/Packages/Spicetify.Spicetify_Microsoft.Winget.Source_8wekyb3d8bbwe/link.exe"
+      - "C:/Users/Admin/AppData/Local/Microsoft/WinGet/Packages/Spicetify.Spicetify_Microsoft.Winget.Source_8wekyb3d8bbwe/link"
+      - "C:/Users/Admin/AppData/Local/spicetify/link.com"
+      - "C:/Users/Admin/AppData/Local/spicetify/link.exe"
+      - "C:/Users/Admin/AppData/Local/spicetify/link"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\PowerShell\\7\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\PuTTY\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WinGet\\Links"
+        - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\ffmpeg"
+        - "C:\\Users\\Admin\\AppData\\Local\\PowerToys\\DSCModules\\"
+        - "C:\\Users\\Admin\\Desktop\\platform-tools"
+        - "C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Spicetify.Spicetify_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\Admin\\AppData\\Local\\spicetify"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/lab1"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:104 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lld-link"
+    candidate_directories:
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/PowerShell/7/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/PuTTY/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/Admin/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Users/Admin/AppData/Local/Programs/Python/Python313/"
+      - "C:/Users/Admin/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/Admin/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/Admin/AppData/Local/Microsoft/WinGet/Links/"
+      - "C:/Users/Admin/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/ffmpeg/"
+      - "C:/Users/Admin/AppData/Local/PowerToys/DSCModules/"
+      - "C:/Users/Admin/Desktop/platform-tools/"
+      - "C:/Users/Admin/AppData/Local/Microsoft/WinGet/Packages/Spicetify.Spicetify_Microsoft.Winget.Source_8wekyb3d8bbwe/"
+      - "C:/Users/Admin/AppData/Local/spicetify/"
+    searched_directories:
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/lld-link.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/lld-link.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/lld-link"
+      - "C:/Windows/System32/lld-link.com"
+      - "C:/Windows/System32/lld-link.exe"
+      - "C:/Windows/System32/lld-link"
+      - "C:/Windows/lld-link.com"
+      - "C:/Windows/lld-link.exe"
+      - "C:/Windows/lld-link"
+      - "C:/Windows/System32/wbem/lld-link.com"
+      - "C:/Windows/System32/wbem/lld-link.exe"
+      - "C:/Windows/System32/wbem/lld-link"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link"
+      - "C:/Windows/System32/OpenSSH/lld-link.com"
+      - "C:/Windows/System32/OpenSSH/lld-link.exe"
+      - "C:/Windows/System32/OpenSSH/lld-link"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/lld-link.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/lld-link.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/lld-link"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link"
+      - "C:/Program Files/dotnet/lld-link.com"
+      - "C:/Program Files/dotnet/lld-link.exe"
+      - "C:/Program Files/dotnet/lld-link"
+      - "C:/Program Files/PowerShell/7/lld-link.com"
+      - "C:/Program Files/PowerShell/7/lld-link.exe"
+      - "C:/Program Files/PowerShell/7/lld-link"
+      - "C:/Program Files/Git/cmd/lld-link.com"
+      - "C:/Program Files/Git/cmd/lld-link.exe"
+      - "C:/Program Files/Git/cmd/lld-link"
+      - "C:/Program Files/PuTTY/lld-link.com"
+      - "C:/Program Files/PuTTY/lld-link.exe"
+      - "C:/Program Files/PuTTY/lld-link"
+      - "C:/Program Files/CMake/bin/lld-link.com"
+      - "C:/Program Files/CMake/bin/lld-link.exe"
+      - "C:/Program Files/CMake/bin/lld-link"
+      - "C:/Users/Admin/AppData/Local/Programs/Python/Python313/Scripts/lld-link.com"
+      - "C:/Users/Admin/AppData/Local/Programs/Python/Python313/Scripts/lld-link.exe"
+      - "C:/Users/Admin/AppData/Local/Programs/Python/Python313/Scripts/lld-link"
+      - "C:/Users/Admin/AppData/Local/Programs/Python/Python313/lld-link.com"
+      - "C:/Users/Admin/AppData/Local/Programs/Python/Python313/lld-link.exe"
+      - "C:/Users/Admin/AppData/Local/Programs/Python/Python313/lld-link"
+      - "C:/Users/Admin/AppData/Local/Programs/Python/Launcher/lld-link.com"
+      - "C:/Users/Admin/AppData/Local/Programs/Python/Launcher/lld-link.exe"
+      - "C:/Users/Admin/AppData/Local/Programs/Python/Launcher/lld-link"
+      - "C:/Users/Admin/AppData/Local/Microsoft/WindowsApps/lld-link.com"
+      - "C:/Users/Admin/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
+      - "C:/Users/Admin/AppData/Local/Microsoft/WindowsApps/lld-link"
+      - "C:/Users/Admin/AppData/Local/Microsoft/WinGet/Links/lld-link.com"
+      - "C:/Users/Admin/AppData/Local/Microsoft/WinGet/Links/lld-link.exe"
+      - "C:/Users/Admin/AppData/Local/Microsoft/WinGet/Links/lld-link"
+      - "C:/Users/Admin/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.com"
+      - "C:/Users/Admin/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.exe"
+      - "C:/Users/Admin/AppData/Local/Programs/Microsoft VS Code/bin/lld-link"
+      - "C:/msys64/ucrt64/bin/lld-link.com"
+      - "C:/msys64/ucrt64/bin/lld-link.exe"
+      - "C:/msys64/ucrt64/bin/lld-link"
+      - "C:/ffmpeg/lld-link.com"
+      - "C:/ffmpeg/lld-link.exe"
+      - "C:/ffmpeg/lld-link"
+      - "C:/Users/Admin/AppData/Local/PowerToys/DSCModules/lld-link.com"
+      - "C:/Users/Admin/AppData/Local/PowerToys/DSCModules/lld-link.exe"
+      - "C:/Users/Admin/AppData/Local/PowerToys/DSCModules/lld-link"
+      - "C:/Users/Admin/Desktop/platform-tools/lld-link.com"
+      - "C:/Users/Admin/Desktop/platform-tools/lld-link.exe"
+      - "C:/Users/Admin/Desktop/platform-tools/lld-link"
+      - "C:/Users/Admin/AppData/Local/Microsoft/WinGet/Packages/Spicetify.Spicetify_Microsoft.Winget.Source_8wekyb3d8bbwe/lld-link.com"
+      - "C:/Users/Admin/AppData/Local/Microsoft/WinGet/Packages/Spicetify.Spicetify_Microsoft.Winget.Source_8wekyb3d8bbwe/lld-link.exe"
+      - "C:/Users/Admin/AppData/Local/Microsoft/WinGet/Packages/Spicetify.Spicetify_Microsoft.Winget.Source_8wekyb3d8bbwe/lld-link"
+      - "C:/Users/Admin/AppData/Local/spicetify/lld-link.com"
+      - "C:/Users/Admin/AppData/Local/spicetify/lld-link.exe"
+      - "C:/Users/Admin/AppData/Local/spicetify/lld-link"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\PowerShell\\7\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\PuTTY\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WinGet\\Links"
+        - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\ffmpeg"
+        - "C:\\Users\\Admin\\AppData\\Local\\PowerToys\\DSCModules\\"
+        - "C:\\Users\\Admin\\Desktop\\platform-tools"
+        - "C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Spicetify.Spicetify_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\Admin\\AppData\\Local\\spicetify"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/lab1"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:468 (find_file)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:506 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/"
+    found: "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\PowerShell\\7\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\PuTTY\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WinGet\\Links"
+        - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\ffmpeg"
+        - "C:\\Users\\Admin\\AppData\\Local\\PowerToys\\DSCModules\\"
+        - "C:\\Users\\Admin\\Desktop\\platform-tools"
+        - "C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Spicetify.Spicetify_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\Admin\\AppData\\Local\\spicetify"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/lab1"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      ╨Т╨╡╤А╤Б╨╕╤П MSBuild 18.0.5+e22287bf1 ╨┤╨╗╤П .NET Framework
+      ╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 10.03.2026 3:47:59.
+      
+      ╨Я╤А╨╛╨╡╨║╤В "C:\\Users\\Admin\\Desktop\\oop\\4sem\\LAB\\lab1 variant 17\\build\\CMakeFiles\\4.3.0-rc2\\CompilerIdCXX\\CompilerIdCXX.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+      PrepareForBuild:
+        ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "Debug\\".
+        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "Debug\\CompilerIdCXX.tlog\\".
+      InitializeBuildStatus:
+        ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
+        ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+      ClCompile:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc145.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+      LINK : fatal error LNK1104: ╨╜╨╡ ╤Г╨┤╨░╨╡╤В╤Б╤П ╨╛╤В╨║╤А╤Л╤В╤М ╤Д╨░╨╣╨╗ "ucrtd.lib" [C:\\Users\\Admin\\Desktop\\oop\\4sem\\LAB\\lab1 variant 17\\build\\CMakeFiles\\4.3.0-rc2\\CompilerIdCXX\\CompilerIdCXX.vcxproj]
+      ╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "C:\\Users\\Admin\\Desktop\\oop\\4sem\\LAB\\lab1 variant 17\\build\\CMakeFiles\\4.3.0-rc2\\CompilerIdCXX\\CompilerIdCXX.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О) ╤Б ╨╛╤И╨╕╨▒╨║╨╛╨╣.
+      
+      ╨Ю╤И╨╕╨▒╨║╨░ ╤Б╨▒╨╛╤А╨║╨╕.
+      
+      "C:\\Users\\Admin\\Desktop\\oop\\4sem\\LAB\\lab1 variant 17\\build\\CMakeFiles\\4.3.0-rc2\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (╤Ж╨╡╨╗╨╡╨▓╨╛╨╣ ╨╛╨▒╤К╨╡╨║╤В ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О) (1) ->
+      (╨ж╨╡╨╗╨╡╨▓╨╛╨╣ ╨╛╨▒╤К╨╡╨║╤В Link) -> 
+        LINK : fatal error LNK1104: ╨╜╨╡ ╤Г╨┤╨░╨╡╤В╤Б╤П ╨╛╤В╨║╤А╤Л╤В╤М ╤Д╨░╨╣╨╗ "ucrtd.lib" [C:\\Users\\Admin\\Desktop\\oop\\4sem\\LAB\\lab1 variant 17\\build\\CMakeFiles\\4.3.0-rc2\\CompilerIdCXX\\CompilerIdCXX.vcxproj]
+      
+          ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
+          ╨Ю╤И╨╕╨▒╨╛╨║: 1
+      
+      ╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:00.60
+      
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:468 (find_file)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:506 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/"
+    found: "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\PowerShell\\7\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\PuTTY\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WinGet\\Links"
+        - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\ffmpeg"
+        - "C:\\Users\\Admin\\AppData\\Local\\PowerToys\\DSCModules\\"
+        - "C:\\Users\\Admin\\Desktop\\platform-tools"
+        - "C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Spicetify.Spicetify_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\Admin\\AppData\\Local\\spicetify"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/lab1"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      ╨Т╨╡╤А╤Б╨╕╤П MSBuild 18.0.5+e22287bf1 ╨┤╨╗╤П .NET Framework
+      ╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 10.03.2026 3:48:00.
+      
+      ╨Я╤А╨╛╨╡╨║╤В "C:\\Users\\Admin\\Desktop\\oop\\4sem\\LAB\\lab1 variant 17\\build\\CMakeFiles\\4.3.0-rc2\\CompilerIdCXX\\CompilerIdCXX.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+      PrepareForBuild:
+        ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "Debug\\".
+        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "Debug\\CompilerIdCXX.tlog\\".
+      InitializeBuildStatus:
+        ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
+        ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+      ClCompile:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc145.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+      LINK : fatal error LNK1104: ╨╜╨╡ ╤Г╨┤╨░╨╡╤В╤Б╤П ╨╛╤В╨║╤А╤Л╤В╤М ╤Д╨░╨╣╨╗ "ucrtd.lib" [C:\\Users\\Admin\\Desktop\\oop\\4sem\\LAB\\lab1 variant 17\\build\\CMakeFiles\\4.3.0-rc2\\CompilerIdCXX\\CompilerIdCXX.vcxproj]
+      ╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "C:\\Users\\Admin\\Desktop\\oop\\4sem\\LAB\\lab1 variant 17\\build\\CMakeFiles\\4.3.0-rc2\\CompilerIdCXX\\CompilerIdCXX.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О) ╤Б ╨╛╤И╨╕╨▒╨║╨╛╨╣.
+      
+      ╨Ю╤И╨╕╨▒╨║╨░ ╤Б╨▒╨╛╤А╨║╨╕.
+      
+      "C:\\Users\\Admin\\Desktop\\oop\\4sem\\LAB\\lab1 variant 17\\build\\CMakeFiles\\4.3.0-rc2\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (╤Ж╨╡╨╗╨╡╨▓╨╛╨╣ ╨╛╨▒╤К╨╡╨║╤В ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О) (1) ->
+      (╨ж╨╡╨╗╨╡╨▓╨╛╨╣ ╨╛╨▒╤К╨╡╨║╤В Link) -> 
+        LINK : fatal error LNK1104: ╨╜╨╡ ╤Г╨┤╨░╨╡╤В╤Б╤П ╨╛╤В╨║╤А╤Л╤В╤М ╤Д╨░╨╣╨╗ "ucrtd.lib" [C:\\Users\\Admin\\Desktop\\oop\\4sem\\LAB\\lab1 variant 17\\build\\CMakeFiles\\4.3.0-rc2\\CompilerIdCXX\\CompilerIdCXX.vcxproj]
+      
+          ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
+          ╨Ю╤И╨╕╨▒╨╛╨║: 1
+      
+      ╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:00.51
+      
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:103 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "link"
+    candidate_directories:
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/PowerShell/7/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/PuTTY/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/Admin/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Users/Admin/AppData/Local/Programs/Python/Python313/"
+      - "C:/Users/Admin/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/Admin/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/Admin/AppData/Local/Microsoft/WinGet/Links/"
+      - "C:/Users/Admin/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/ffmpeg/"
+      - "C:/Users/Admin/AppData/Local/PowerToys/DSCModules/"
+      - "C:/Users/Admin/Desktop/platform-tools/"
+      - "C:/Users/Admin/AppData/Local/Microsoft/WinGet/Packages/Spicetify.Spicetify_Microsoft.Winget.Source_8wekyb3d8bbwe/"
+      - "C:/Users/Admin/AppData/Local/spicetify/"
+    searched_directories:
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/link.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/link.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/link"
+      - "C:/Windows/System32/link.com"
+      - "C:/Windows/System32/link.exe"
+      - "C:/Windows/System32/link"
+      - "C:/Windows/link.com"
+      - "C:/Windows/link.exe"
+      - "C:/Windows/link"
+      - "C:/Windows/System32/wbem/link.com"
+      - "C:/Windows/System32/wbem/link.exe"
+      - "C:/Windows/System32/wbem/link"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/link.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/link.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/link"
+      - "C:/Windows/System32/OpenSSH/link.com"
+      - "C:/Windows/System32/OpenSSH/link.exe"
+      - "C:/Windows/System32/OpenSSH/link"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/link.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/link.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/link"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/link.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/link.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/link"
+      - "C:/Program Files/dotnet/link.com"
+      - "C:/Program Files/dotnet/link.exe"
+      - "C:/Program Files/dotnet/link"
+      - "C:/Program Files/PowerShell/7/link.com"
+      - "C:/Program Files/PowerShell/7/link.exe"
+      - "C:/Program Files/PowerShell/7/link"
+      - "C:/Program Files/Git/cmd/link.com"
+      - "C:/Program Files/Git/cmd/link.exe"
+      - "C:/Program Files/Git/cmd/link"
+      - "C:/Program Files/PuTTY/link.com"
+      - "C:/Program Files/PuTTY/link.exe"
+      - "C:/Program Files/PuTTY/link"
+      - "C:/Program Files/CMake/bin/link.com"
+      - "C:/Program Files/CMake/bin/link.exe"
+      - "C:/Program Files/CMake/bin/link"
+      - "C:/Users/Admin/AppData/Local/Programs/Python/Python313/Scripts/link.com"
+      - "C:/Users/Admin/AppData/Local/Programs/Python/Python313/Scripts/link.exe"
+      - "C:/Users/Admin/AppData/Local/Programs/Python/Python313/Scripts/link"
+      - "C:/Users/Admin/AppData/Local/Programs/Python/Python313/link.com"
+      - "C:/Users/Admin/AppData/Local/Programs/Python/Python313/link.exe"
+      - "C:/Users/Admin/AppData/Local/Programs/Python/Python313/link"
+      - "C:/Users/Admin/AppData/Local/Programs/Python/Launcher/link.com"
+      - "C:/Users/Admin/AppData/Local/Programs/Python/Launcher/link.exe"
+      - "C:/Users/Admin/AppData/Local/Programs/Python/Launcher/link"
+      - "C:/Users/Admin/AppData/Local/Microsoft/WindowsApps/link.com"
+      - "C:/Users/Admin/AppData/Local/Microsoft/WindowsApps/link.exe"
+      - "C:/Users/Admin/AppData/Local/Microsoft/WindowsApps/link"
+      - "C:/Users/Admin/AppData/Local/Microsoft/WinGet/Links/link.com"
+      - "C:/Users/Admin/AppData/Local/Microsoft/WinGet/Links/link.exe"
+      - "C:/Users/Admin/AppData/Local/Microsoft/WinGet/Links/link"
+      - "C:/Users/Admin/AppData/Local/Programs/Microsoft VS Code/bin/link.com"
+      - "C:/Users/Admin/AppData/Local/Programs/Microsoft VS Code/bin/link.exe"
+      - "C:/Users/Admin/AppData/Local/Programs/Microsoft VS Code/bin/link"
+      - "C:/msys64/ucrt64/bin/link.com"
+      - "C:/msys64/ucrt64/bin/link.exe"
+      - "C:/msys64/ucrt64/bin/link"
+      - "C:/ffmpeg/link.com"
+      - "C:/ffmpeg/link.exe"
+      - "C:/ffmpeg/link"
+      - "C:/Users/Admin/AppData/Local/PowerToys/DSCModules/link.com"
+      - "C:/Users/Admin/AppData/Local/PowerToys/DSCModules/link.exe"
+      - "C:/Users/Admin/AppData/Local/PowerToys/DSCModules/link"
+      - "C:/Users/Admin/Desktop/platform-tools/link.com"
+      - "C:/Users/Admin/Desktop/platform-tools/link.exe"
+      - "C:/Users/Admin/Desktop/platform-tools/link"
+      - "C:/Users/Admin/AppData/Local/Microsoft/WinGet/Packages/Spicetify.Spicetify_Microsoft.Winget.Source_8wekyb3d8bbwe/link.com"
+      - "C:/Users/Admin/AppData/Local/Microsoft/WinGet/Packages/Spicetify.Spicetify_Microsoft.Winget.Source_8wekyb3d8bbwe/link.exe"
+      - "C:/Users/Admin/AppData/Local/Microsoft/WinGet/Packages/Spicetify.Spicetify_Microsoft.Winget.Source_8wekyb3d8bbwe/link"
+      - "C:/Users/Admin/AppData/Local/spicetify/link.com"
+      - "C:/Users/Admin/AppData/Local/spicetify/link.exe"
+      - "C:/Users/Admin/AppData/Local/spicetify/link"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\PowerShell\\7\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\PuTTY\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WinGet\\Links"
+        - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\ffmpeg"
+        - "C:\\Users\\Admin\\AppData\\Local\\PowerToys\\DSCModules\\"
+        - "C:\\Users\\Admin\\Desktop\\platform-tools"
+        - "C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Spicetify.Spicetify_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\Admin\\AppData\\Local\\spicetify"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/lab1"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:104 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lld-link"
+    candidate_directories:
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/PowerShell/7/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/PuTTY/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/Admin/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Users/Admin/AppData/Local/Programs/Python/Python313/"
+      - "C:/Users/Admin/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/Admin/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/Admin/AppData/Local/Microsoft/WinGet/Links/"
+      - "C:/Users/Admin/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/ffmpeg/"
+      - "C:/Users/Admin/AppData/Local/PowerToys/DSCModules/"
+      - "C:/Users/Admin/Desktop/platform-tools/"
+      - "C:/Users/Admin/AppData/Local/Microsoft/WinGet/Packages/Spicetify.Spicetify_Microsoft.Winget.Source_8wekyb3d8bbwe/"
+      - "C:/Users/Admin/AppData/Local/spicetify/"
+    searched_directories:
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/lld-link.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/lld-link.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/lld-link"
+      - "C:/Windows/System32/lld-link.com"
+      - "C:/Windows/System32/lld-link.exe"
+      - "C:/Windows/System32/lld-link"
+      - "C:/Windows/lld-link.com"
+      - "C:/Windows/lld-link.exe"
+      - "C:/Windows/lld-link"
+      - "C:/Windows/System32/wbem/lld-link.com"
+      - "C:/Windows/System32/wbem/lld-link.exe"
+      - "C:/Windows/System32/wbem/lld-link"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link"
+      - "C:/Windows/System32/OpenSSH/lld-link.com"
+      - "C:/Windows/System32/OpenSSH/lld-link.exe"
+      - "C:/Windows/System32/OpenSSH/lld-link"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/lld-link.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/lld-link.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/lld-link"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link"
+      - "C:/Program Files/dotnet/lld-link.com"
+      - "C:/Program Files/dotnet/lld-link.exe"
+      - "C:/Program Files/dotnet/lld-link"
+      - "C:/Program Files/PowerShell/7/lld-link.com"
+      - "C:/Program Files/PowerShell/7/lld-link.exe"
+      - "C:/Program Files/PowerShell/7/lld-link"
+      - "C:/Program Files/Git/cmd/lld-link.com"
+      - "C:/Program Files/Git/cmd/lld-link.exe"
+      - "C:/Program Files/Git/cmd/lld-link"
+      - "C:/Program Files/PuTTY/lld-link.com"
+      - "C:/Program Files/PuTTY/lld-link.exe"
+      - "C:/Program Files/PuTTY/lld-link"
+      - "C:/Program Files/CMake/bin/lld-link.com"
+      - "C:/Program Files/CMake/bin/lld-link.exe"
+      - "C:/Program Files/CMake/bin/lld-link"
+      - "C:/Users/Admin/AppData/Local/Programs/Python/Python313/Scripts/lld-link.com"
+      - "C:/Users/Admin/AppData/Local/Programs/Python/Python313/Scripts/lld-link.exe"
+      - "C:/Users/Admin/AppData/Local/Programs/Python/Python313/Scripts/lld-link"
+      - "C:/Users/Admin/AppData/Local/Programs/Python/Python313/lld-link.com"
+      - "C:/Users/Admin/AppData/Local/Programs/Python/Python313/lld-link.exe"
+      - "C:/Users/Admin/AppData/Local/Programs/Python/Python313/lld-link"
+      - "C:/Users/Admin/AppData/Local/Programs/Python/Launcher/lld-link.com"
+      - "C:/Users/Admin/AppData/Local/Programs/Python/Launcher/lld-link.exe"
+      - "C:/Users/Admin/AppData/Local/Programs/Python/Launcher/lld-link"
+      - "C:/Users/Admin/AppData/Local/Microsoft/WindowsApps/lld-link.com"
+      - "C:/Users/Admin/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
+      - "C:/Users/Admin/AppData/Local/Microsoft/WindowsApps/lld-link"
+      - "C:/Users/Admin/AppData/Local/Microsoft/WinGet/Links/lld-link.com"
+      - "C:/Users/Admin/AppData/Local/Microsoft/WinGet/Links/lld-link.exe"
+      - "C:/Users/Admin/AppData/Local/Microsoft/WinGet/Links/lld-link"
+      - "C:/Users/Admin/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.com"
+      - "C:/Users/Admin/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.exe"
+      - "C:/Users/Admin/AppData/Local/Programs/Microsoft VS Code/bin/lld-link"
+      - "C:/msys64/ucrt64/bin/lld-link.com"
+      - "C:/msys64/ucrt64/bin/lld-link.exe"
+      - "C:/msys64/ucrt64/bin/lld-link"
+      - "C:/ffmpeg/lld-link.com"
+      - "C:/ffmpeg/lld-link.exe"
+      - "C:/ffmpeg/lld-link"
+      - "C:/Users/Admin/AppData/Local/PowerToys/DSCModules/lld-link.com"
+      - "C:/Users/Admin/AppData/Local/PowerToys/DSCModules/lld-link.exe"
+      - "C:/Users/Admin/AppData/Local/PowerToys/DSCModules/lld-link"
+      - "C:/Users/Admin/Desktop/platform-tools/lld-link.com"
+      - "C:/Users/Admin/Desktop/platform-tools/lld-link.exe"
+      - "C:/Users/Admin/Desktop/platform-tools/lld-link"
+      - "C:/Users/Admin/AppData/Local/Microsoft/WinGet/Packages/Spicetify.Spicetify_Microsoft.Winget.Source_8wekyb3d8bbwe/lld-link.com"
+      - "C:/Users/Admin/AppData/Local/Microsoft/WinGet/Packages/Spicetify.Spicetify_Microsoft.Winget.Source_8wekyb3d8bbwe/lld-link.exe"
+      - "C:/Users/Admin/AppData/Local/Microsoft/WinGet/Packages/Spicetify.Spicetify_Microsoft.Winget.Source_8wekyb3d8bbwe/lld-link"
+      - "C:/Users/Admin/AppData/Local/spicetify/lld-link.com"
+      - "C:/Users/Admin/AppData/Local/spicetify/lld-link.exe"
+      - "C:/Users/Admin/AppData/Local/spicetify/lld-link"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\PowerShell\\7\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\PuTTY\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WinGet\\Links"
+        - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\ffmpeg"
+        - "C:\\Users\\Admin\\AppData\\Local\\PowerToys\\DSCModules\\"
+        - "C:\\Users\\Admin\\Desktop\\platform-tools"
+        - "C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Spicetify.Spicetify_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\Admin\\AppData\\Local\\spicetify"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/lab1"
+...

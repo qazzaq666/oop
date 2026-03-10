@@ -1,0 +1,14 @@
+[
+{
+  "directory": "C:/Users/Admin/Desktop/oop/4sem/LAB/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\18\\BUILDT~1\\VC\\Tools\\MSVC\\1450~1.357\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -I\"C:\\Users\\Admin\\Desktop\\oop\\4sem\\LAB\\lab1 variant 17\\.\" -I\"C:\\Users\\Admin\\Desktop\\oop\\4sem\\LAB\\lab1 variant 17\\.\\src\" -I\"C:\\Users\\Admin\\Desktop\\oop\\4sem\\LAB\\lab1 variant 17\\.\\include\" /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 /FoCMakeFiles\\lab1.dir\\main.cpp.obj /FdCMakeFiles\\lab1.dir\\ /FS -c \"C:\\Users\\Admin\\Desktop\\oop\\4sem\\LAB\\lab1 variant 17\\main.cpp\"",
+  "file": "C:/Users/Admin/Desktop/oop/4sem/LAB/lab1 variant 17/main.cpp",
+  "output": "C:/Users/Admin/Desktop/oop/4sem/LAB/build/CMakeFiles/lab1.dir/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/Admin/Desktop/oop/4sem/LAB/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\18\\BUILDT~1\\VC\\Tools\\MSVC\\1450~1.357\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -I\"C:\\Users\\Admin\\Desktop\\oop\\4sem\\LAB\\lab1 variant 17\\.\" -I\"C:\\Users\\Admin\\Desktop\\oop\\4sem\\LAB\\lab1 variant 17\\.\\src\" -I\"C:\\Users\\Admin\\Desktop\\oop\\4sem\\LAB\\lab1 variant 17\\.\\include\" /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 /FoCMakeFiles\\lab1.dir\\src\\matrix.cpp.obj /FdCMakeFiles\\lab1.dir\\ /FS -c \"C:\\Users\\Admin\\Desktop\\oop\\4sem\\LAB\\lab1 variant 17\\src\\matrix.cpp\"",
+  "file": "C:/Users/Admin/Desktop/oop/4sem/LAB/lab1 variant 17/src/matrix.cpp",
+  "output": "C:/Users/Admin/Desktop/oop/4sem/LAB/build/CMakeFiles/lab1.dir/src/matrix.cpp.obj"
+}
+]
